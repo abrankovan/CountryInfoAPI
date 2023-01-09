@@ -1,0 +1,910 @@
+2023-01-09 00:00:04.964 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province - -
+2023-01-09 00:00:04.975 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 00:00:04.976 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 00:00:04.976 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 00:00:04.981 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:00:04.983 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:00:04.984 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 00:00:04.985 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 00:00:04.986 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 00:00:04.987 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 00:00:04.988 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 00:00:04.989 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-09 00:00:04.990 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:00:06.604 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:00:07.830 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 00:00:07.844 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 00:00:07.845 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-01-09 00:00:07.846 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:00:07.848 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:00:07.849 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:00:07.852 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:00:07.854 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.855 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.856 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.857 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.858 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.860 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.861 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.862 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.863 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.865 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.866 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.867 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.868 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.869 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.870 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.871 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.872 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.873 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.875 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.876 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.877 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.878 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.880 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.881 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.882 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.883 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.884 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.885 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.887 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.888 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:07.889 +01:00 [DBG] A data reader was disposed.
+2023-01-09 00:00:07.890 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:00:07.891 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:00:07.893 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 00:00:07.895 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-01-09 00:00:07.896 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-09 00:00:07.897 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 00:00:07.902 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 2912.1218ms
+2023-01-09 00:00:07.903 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:00:07.904 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 00:00:07.905 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province - - - 200 3694 application/json;+charset=utf-8 2941.1550ms
+2023-01-09 00:00:48.298 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province - -
+2023-01-09 00:00:48.308 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 00:00:48.308 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 00:00:48.309 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 00:00:48.311 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:00:48.312 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:00:48.313 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 00:00:48.315 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 00:00:48.317 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 00:00:48.318 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 00:00:48.320 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 00:00:48.321 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-09 00:00:48.322 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:00:49.696 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:00:50.167 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 00:00:50.170 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 00:00:50.171 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-01-09 00:00:50.172 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:00:50.173 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:00:50.174 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:00:50.176 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:00:50.177 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.178 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.179 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.181 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.182 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.184 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.185 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.186 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.188 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.189 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.190 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.191 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.192 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.193 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.194 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.194 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.196 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.197 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.198 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.199 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.201 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.202 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.204 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.205 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.206 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.207 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.208 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.209 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.210 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.211 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:00:50.213 +01:00 [DBG] A data reader was disposed.
+2023-01-09 00:00:50.213 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:00:50.215 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:00:50.216 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 00:00:50.219 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/json"]'.
+2023-01-09 00:00:50.220 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'text/json' to write the response.
+2023-01-09 00:00:50.221 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 00:00:50.222 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 1900.2412ms
+2023-01-09 00:00:50.226 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:00:50.227 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 00:00:50.228 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province - - - 200 3694 text/json;+charset=utf-8 1930.4627ms
+2023-01-09 00:01:12.046 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province - -
+2023-01-09 00:01:12.052 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 00:01:12.053 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 00:01:12.053 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 00:01:12.055 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:01:12.056 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:01:12.056 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 00:01:12.058 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 00:01:12.059 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 00:01:12.060 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 00:01:12.061 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 00:01:12.062 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-09 00:01:12.064 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:01:13.330 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:01:13.539 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 00:01:13.540 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 00:01:13.541 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-01-09 00:01:13.542 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:01:13.543 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:01:13.544 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:01:13.546 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:01:13.548 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.549 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.551 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.552 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.553 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.553 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.555 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.556 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.557 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.558 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.559 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.560 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.561 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.563 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.564 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.565 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.566 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.567 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.568 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.569 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.570 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.572 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.573 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.574 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.575 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.576 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.578 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.579 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.580 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.581 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:01:13.582 +01:00 [DBG] A data reader was disposed.
+2023-01-09 00:01:13.583 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:01:13.584 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:01:13.585 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 00:01:13.587 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/xml"]'.
+2023-01-09 00:01:13.588 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'text/xml' to write the response.
+2023-01-09 00:01:13.589 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 00:01:13.616 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 1552.0377ms
+2023-01-09 00:01:13.617 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:01:13.619 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 00:01:13.619 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province - - - 200 4154 text/xml;+charset=utf-8 1573.3523ms
+2023-01-09 00:11:30.914 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/index.html - -
+2023-01-09 00:11:30.921 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-01-09 00:11:30.932 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-01-09 00:11:30.934 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/index.html - - - 200 - text/html;charset=utf-8 19.8515ms
+2023-01-09 00:11:30.952 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 00:11:30.952 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_vs/browserLink - -
+2023-01-09 00:11:30.954 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 1.6419ms
+2023-01-09 00:11:30.962 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.6817ms
+2023-01-09 00:11:31.134 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/v1/swagger.json - -
+2023-01-09 00:11:31.142 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4732ms
+2023-01-09 00:12:05.150 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province - -
+2023-01-09 00:12:05.155 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 00:12:05.157 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 00:12:05.158 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 00:12:05.159 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:12:05.160 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:12:05.161 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 00:12:05.163 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 00:12:05.164 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 00:12:05.165 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 00:12:05.167 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 00:12:05.168 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-09 00:12:05.169 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:12:09.188 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 00:12:09.845 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 00:12:09.848 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 00:12:09.849 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-01-09 00:12:09.850 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:12:09.852 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:12:09.853 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:12:09.856 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 00:12:09.858 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.859 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.860 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.861 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.863 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.864 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.865 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.867 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.868 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.869 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.871 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.872 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.873 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.874 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.875 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.876 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.878 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.879 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.880 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.882 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.883 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.885 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.886 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.887 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.888 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.889 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.890 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.892 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.893 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.894 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 00:12:09.895 +01:00 [DBG] A data reader was disposed.
+2023-01-09 00:12:09.896 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\name2\Downloads\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 00:12:09.897 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 00:12:09.898 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 00:12:09.901 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-01-09 00:12:09.902 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-01-09 00:12:09.903 +01:00 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2023-01-09 00:12:09.904 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 4734.7453ms
+2023-01-09 00:12:09.905 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 00:12:09.906 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 00:12:09.907 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province - - - 406 0 - 4756.8643ms
+2023-01-09 09:16:51.177 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-09 09:16:51.354 +01:00 [DBG] Hosting starting
+2023-01-09 09:16:51.638 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 963A8911917DD36B160DC829312E1A5AA4062E73)
+2023-01-09 09:16:51.697 +01:00 [INF] Now listening on: https://localhost:50148
+2023-01-09 09:16:51.698 +01:00 [INF] Now listening on: http://localhost:50149
+2023-01-09 09:16:51.699 +01:00 [DBG] Loaded hosting startup assembly Cityinfo.API
+2023-01-09 09:16:51.700 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-01-09 09:16:51.702 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-01-09 09:16:51.703 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-09 09:16:51.704 +01:00 [INF] Hosting environment: Development
+2023-01-09 09:16:51.705 +01:00 [INF] Content root path: C:\Users\ADMIN\Desktop\kuca\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\
+2023-01-09 09:16:51.706 +01:00 [DBG] Hosting started
+2023-01-09 09:16:52.051 +01:00 [DBG] Connection id "0HMNI37EEC0BV" received FIN.
+2023-01-09 09:16:52.076 +01:00 [DBG] Connection id "0HMNI37EEC0BV" accepted.
+2023-01-09 09:16:52.079 +01:00 [DBG] Connection id "0HMNI37EEC0BV" started.
+2023-01-09 09:16:52.115 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-09 09:16:52.768 +01:00 [DBG] Connection id "0HMNI37EEC0BV" stopped.
+2023-01-09 09:16:52.787 +01:00 [DBG] Connection id "0HMNI37EEC0BV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-09 09:16:53.227 +01:00 [DBG] Connection id "0HMNI37EEC0C0" accepted.
+2023-01-09 09:16:53.278 +01:00 [DBG] Connection id "0HMNI37EEC0C0" started.
+2023-01-09 09:16:53.442 +01:00 [DBG] Connection 0HMNI37EEC0C0 established using the following protocol: "Tls12"
+2023-01-09 09:16:53.545 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/ - -
+2023-01-09 09:16:53.612 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-09 09:16:53.687 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 09:16:53.733 +01:00 [DBG] No candidates found for the request path '/'
+2023-01-09 09:16:53.735 +01:00 [DBG] Request did not match any endpoints
+2023-01-09 09:16:53.780 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/ - - - 404 0 - 243.3990ms
+2023-01-09 09:17:03.019 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/index.html - -
+2023-01-09 09:17:03.602 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-01-09 09:17:03.626 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-01-09 09:17:03.642 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/index.html - - - 200 - text/html;charset=utf-8 622.5024ms
+2023-01-09 09:17:03.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/swagger-ui.css - -
+2023-01-09 09:17:03.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/swagger-ui-bundle.js - -
+2023-01-09 09:17:03.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_vs/browserLink - -
+2023-01-09 09:17:03.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 09:17:03.949 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-01-09 09:17:03.996 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 143.5155ms
+2023-01-09 09:17:04.053 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/swagger-ui.css - - - 200 143632 text/css 200.9588ms
+2023-01-09 09:17:03.852 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/swagger-ui-standalone-preset.js - -
+2023-01-09 09:17:04.078 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-01-09 09:17:04.130 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-01-09 09:17:04.153 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 300.9203ms
+2023-01-09 09:17:04.196 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 343.5903ms
+2023-01-09 09:17:04.201 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 349.0031ms
+2023-01-09 09:17:04.531 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/v1/swagger.json - -
+2023-01-09 09:17:04.642 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/favicon-32x32.png - -
+2023-01-09 09:17:04.647 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-01-09 09:17:04.656 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/favicon-32x32.png - - - 200 628 image/png 13.9720ms
+2023-01-09 09:17:04.960 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 428.5195ms
+2023-01-09 09:18:02.482 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 09:18:02.484 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 1.6705ms
+2023-01-09 09:20:50.294 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province - -
+2023-01-09 09:20:50.295 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 09:20:50.305 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 09:20:50.314 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 09:20:50.321 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 09:20:50.327 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 09:20:50.370 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 09:20:50.375 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 09:20:50.376 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 09:20:50.377 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 09:20:50.379 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 09:20:50.381 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-09 09:20:50.385 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 09:20:50.667 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-01-09 09:20:59.298 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 09:21:02.419 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 09:21:02.491 +01:00 [DBG] Compiling query expression: 
+'DbSet<Province>()
+    .OrderBy(c => c.Name)'
+2023-01-09 09:21:02.890 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Province>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Province.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Province.Description (string) Required MaxLength(2000), 1], [Property: Province.Name (string) Required MaxLength(50), 2] }
+        SELECT p.Id, p.Description, p.Name
+        FROM Provinces AS p
+        ORDER BY p.Name ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Province>, 
+    Cityinfo.API.DbContexts.ProvinceInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2023-01-09 09:21:02.950 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 09:21:03.049 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (96ms).
+2023-01-09 09:21:03.064 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 09:21:03.095 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ADMIN\Desktop\kuca\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 09:21:03.111 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 09:21:03.145 +01:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 09:21:03.175 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.206 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.209 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.211 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.215 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.223 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.226 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.228 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.230 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.232 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.236 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.240 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.242 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.244 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.246 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.248 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.252 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.255 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.258 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.259 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.261 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.263 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.272 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.282 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.316 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.318 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.328 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.330 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.332 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.334 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:21:03.349 +01:00 [DBG] A data reader was disposed.
+2023-01-09 09:21:03.365 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ADMIN\Desktop\kuca\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 09:21:03.374 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 09:21:03.396 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 09:21:03.406 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]'.
+2023-01-09 09:21:03.408 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-09 09:21:03.409 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 09:21:03.603 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 13208.9105ms
+2023-01-09 09:21:03.607 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 09:21:03.615 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 09:21:03.624 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province - - - 200 3694 application/json;+charset=utf-8 13329.8784ms
+2023-01-09 09:21:55.985 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province/1/citiesinprovincies - -
+2023-01-09 09:21:55.987 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 09:21:55.993 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province/1/citiesinprovincies'
+2023-01-09 09:21:55.994 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.CitiesInProvinceController.GetCitiesInProvince (Cityinfo.API)' with route pattern 'api/province/{provinceID}/citiesinprovincies' is valid for the request path '/api/province/1/citiesinprovincies'
+2023-01-09 09:21:55.997 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.CitiesInProvinceController.GetCitiesInProvince (Cityinfo.API)'
+2023-01-09 09:21:55.998 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.CitiesInProvinceController.GetCitiesInProvince (Cityinfo.API)'
+2023-01-09 09:21:56.016 +01:00 [INF] Route matched with {action = "GetCitiesInProvince", controller = "CitiesInProvince"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.CitiesInProvinceDto]] GetCitiesInProvince(Int32) on controller Cityinfo.API.Controllers.CitiesInProvinceController (Cityinfo.API).
+2023-01-09 09:21:56.019 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 09:21:56.022 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 09:21:56.024 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 09:21:56.027 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 09:21:56.028 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+2023-01-09 09:21:56.030 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.CitiesInProvinceController (Cityinfo.API)
+2023-01-09 09:21:56.035 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.CitiesInProvinceController (Cityinfo.API)
+2023-01-09 09:21:56.044 +01:00 [DBG] Attempting to bind parameter 'provinceID' of type 'System.Int32' ...
+2023-01-09 09:21:56.048 +01:00 [DBG] Attempting to bind parameter 'provinceID' of type 'System.Int32' using the name 'provinceID' in request data ...
+2023-01-09 09:21:56.051 +01:00 [DBG] Done attempting to bind parameter 'provinceID' of type 'System.Int32'.
+2023-01-09 09:21:56.052 +01:00 [DBG] Done attempting to bind parameter 'provinceID' of type 'System.Int32'.
+2023-01-09 09:21:56.054 +01:00 [DBG] Attempting to validate the bound parameter 'provinceID' of type 'System.Int32' ...
+2023-01-09 09:21:56.059 +01:00 [DBG] Done attempting to validate the bound parameter 'provinceID' of type 'System.Int32'.
+2023-01-09 09:21:56.065 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 09:21:56.075 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/json"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-01-09 09:21:56.082 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-09 09:21:56.084 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.CitiesInProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 09:21:56.092 +01:00 [INF] Executed action Cityinfo.API.Controllers.CitiesInProvinceController.GetCitiesInProvince (Cityinfo.API) in 61.7494ms
+2023-01-09 09:21:56.096 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.CitiesInProvinceController.GetCitiesInProvince (Cityinfo.API)'
+2023-01-09 09:21:56.097 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province/1/citiesinprovincies - - - 200 160 application/json;+charset=utf-8 112.3090ms
+2023-01-09 09:41:04.210 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-09 09:41:04.424 +01:00 [DBG] Hosting starting
+2023-01-09 09:41:04.703 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 963A8911917DD36B160DC829312E1A5AA4062E73)
+2023-01-09 09:41:04.768 +01:00 [INF] Now listening on: https://localhost:50148
+2023-01-09 09:41:04.769 +01:00 [INF] Now listening on: http://localhost:50149
+2023-01-09 09:41:04.770 +01:00 [DBG] Loaded hosting startup assembly Cityinfo.API
+2023-01-09 09:41:04.771 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-01-09 09:41:04.772 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-01-09 09:41:04.773 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-09 09:41:04.774 +01:00 [INF] Hosting environment: Development
+2023-01-09 09:41:04.775 +01:00 [INF] Content root path: C:\Users\ADMIN\Desktop\kuca\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\
+2023-01-09 09:41:04.776 +01:00 [DBG] Hosting started
+2023-01-09 09:41:04.881 +01:00 [DBG] Connection id "0HMNI3KVDKJMC" received FIN.
+2023-01-09 09:41:04.936 +01:00 [DBG] Connection id "0HMNI3KVDKJMC" accepted.
+2023-01-09 09:41:04.962 +01:00 [DBG] Connection id "0HMNI3KVDKJMC" started.
+2023-01-09 09:41:05.340 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-09 09:41:06.202 +01:00 [DBG] Connection id "0HMNI3KVDKJMD" accepted.
+2023-01-09 09:41:06.309 +01:00 [DBG] Connection id "0HMNI3KVDKJMD" started.
+2023-01-09 09:41:06.322 +01:00 [DBG] Connection id "0HMNI3KVDKJMC" stopped.
+2023-01-09 09:41:06.334 +01:00 [DBG] Connection id "0HMNI3KVDKJMC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-09 09:41:06.405 +01:00 [DBG] Connection 0HMNI3KVDKJMD established using the following protocol: "Tls12"
+2023-01-09 09:41:06.550 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/ - -
+2023-01-09 09:41:06.649 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-09 09:41:06.737 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 09:41:06.806 +01:00 [DBG] No candidates found for the request path '/'
+2023-01-09 09:41:06.808 +01:00 [DBG] Request did not match any endpoints
+2023-01-09 09:41:06.876 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/ - - - 404 0 - 333.6526ms
+2023-01-09 09:41:09.033 +01:00 [DBG] Connection id "0HMNI3KVDKJMD" received FIN.
+2023-01-09 09:41:09.061 +01:00 [DBG] Connection id "0HMNI3KVDKJMD" is closed. The last processed stream ID was 1.
+2023-01-09 09:41:09.064 +01:00 [DBG] Connection id "0HMNI3KVDKJMD" sending FIN because: "The client closed the connection."
+2023-01-09 09:41:09.076 +01:00 [DBG] Connection id "0HMNI3KVDKJMD" stopped.
+2023-01-09 09:41:10.701 +01:00 [DBG] Connection id "0HMNI3KVDKJME" accepted.
+2023-01-09 09:41:10.704 +01:00 [DBG] Connection id "0HMNI3KVDKJME" started.
+2023-01-09 09:41:10.713 +01:00 [DBG] Connection 0HMNI3KVDKJME established using the following protocol: "Tls12"
+2023-01-09 09:41:10.719 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/index.html - -
+2023-01-09 09:41:11.062 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-01-09 09:41:11.080 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-01-09 09:41:11.085 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/index.html - - - 200 - text/html;charset=utf-8 366.4044ms
+2023-01-09 09:41:11.151 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 09:41:11.160 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 8.9512ms
+2023-01-09 09:41:11.206 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/_vs/browserLink - -
+2023-01-09 09:41:11.287 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.9442ms
+2023-01-09 09:41:11.467 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/swagger/v1/swagger.json - -
+2023-01-09 09:41:11.956 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 488.2561ms
+2023-01-09 09:41:14.036 +01:00 [DBG] Connection id "0HMNI3KVDKJME" received FIN.
+2023-01-09 09:41:14.038 +01:00 [DBG] Connection id "0HMNI3KVDKJME" is closed. The last processed stream ID was 7.
+2023-01-09 09:41:14.039 +01:00 [DBG] Connection id "0HMNI3KVDKJME" sending FIN because: "The client closed the connection."
+2023-01-09 09:41:14.050 +01:00 [DBG] Connection id "0HMNI3KVDKJME" stopped.
+2023-01-09 09:41:20.118 +01:00 [DBG] Connection id "0HMNI3KVDKJMF" accepted.
+2023-01-09 09:41:20.120 +01:00 [DBG] Connection id "0HMNI3KVDKJMF" started.
+2023-01-09 09:41:20.132 +01:00 [DBG] Connection 0HMNI3KVDKJMF established using the following protocol: "Tls12"
+2023-01-09 09:41:20.136 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/mountain - -
+2023-01-09 09:41:20.137 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 09:41:20.153 +01:00 [DBG] 1 candidate(s) found for the request path '/api/mountain'
+2023-01-09 09:41:20.160 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.MountainController.GetRiver (Cityinfo.API)' with route pattern 'api/mountain' is valid for the request path '/api/mountain'
+2023-01-09 09:41:20.162 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.MountainController.GetRiver (Cityinfo.API)'
+2023-01-09 09:41:20.166 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.MountainController.GetRiver (Cityinfo.API)'
+2023-01-09 09:41:20.190 +01:00 [INF] Route matched with {action = "GetRiver", controller = "Mountain"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.MountainDto]] GetRiver() on controller Cityinfo.API.Controllers.MountainController (Cityinfo.API).
+2023-01-09 09:41:20.196 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 09:41:20.198 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 09:41:20.203 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 09:41:20.205 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 09:41:20.206 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-01-09 09:41:20.209 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.MountainController (Cityinfo.API)
+2023-01-09 09:41:20.211 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.MountainController (Cityinfo.API)
+2023-01-09 09:41:20.217 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 09:41:20.225 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2023-01-09 09:41:20.227 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2023-01-09 09:41:20.229 +01:00 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2023-01-09 09:41:20.238 +01:00 [INF] Executed action Cityinfo.API.Controllers.MountainController.GetRiver (Cityinfo.API) in 22.3477ms
+2023-01-09 09:41:20.240 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.MountainController.GetRiver (Cityinfo.API)'
+2023-01-09 09:41:20.242 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/mountain - - - 406 0 - 105.7681ms
+2023-01-09 09:41:24.048 +01:00 [DBG] Connection id "0HMNI3KVDKJMF" received FIN.
+2023-01-09 09:41:24.055 +01:00 [DBG] Connection id "0HMNI3KVDKJMF" is closed. The last processed stream ID was 1.
+2023-01-09 09:41:24.076 +01:00 [DBG] Connection id "0HMNI3KVDKJMF" sending FIN because: "The client closed the connection."
+2023-01-09 09:41:24.094 +01:00 [DBG] Connection id "0HMNI3KVDKJMF" stopped.
+2023-01-09 09:41:29.722 +01:00 [DBG] Connection id "0HMNI3KVDKJMG" accepted.
+2023-01-09 09:41:29.724 +01:00 [DBG] Connection id "0HMNI3KVDKJMG" started.
+2023-01-09 09:41:29.731 +01:00 [DBG] Connection 0HMNI3KVDKJMG established using the following protocol: "Tls12"
+2023-01-09 09:41:29.733 +01:00 [INF] Request starting HTTP/2 GET https://localhost:50148/api/province - -
+2023-01-09 09:41:29.734 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 09:41:29.737 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 09:41:29.738 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 09:41:29.740 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 09:41:29.741 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 09:41:29.758 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 09:41:29.760 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 09:41:29.761 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 09:41:29.762 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 09:41:29.763 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 09:41:29.765 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+2023-01-09 09:41:29.768 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 09:41:30.034 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-01-09 09:41:36.293 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 09:41:38.174 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 09:41:38.243 +01:00 [DBG] Compiling query expression: 
+'DbSet<Province>()
+    .OrderBy(c => c.Name)'
+2023-01-09 09:41:38.764 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Province>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Province.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Province.Description (string) Required MaxLength(2000), 1], [Property: Province.Name (string) Required MaxLength(50), 2] }
+        SELECT p.Id, p.Description, p.Name
+        FROM Provinces AS p
+        ORDER BY p.Name ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Province>, 
+    Cityinfo.API.DbContexts.ProvinceInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2023-01-09 09:41:38.872 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 09:41:39.038 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (169ms).
+2023-01-09 09:41:39.059 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 09:41:39.099 +01:00 [DBG] Opened connection to database 'main' on server 'C:\Users\ADMIN\Desktop\kuca\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 09:41:39.122 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 09:41:39.189 +01:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 09:41:39.224 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.259 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.260 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.262 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.263 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.267 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.269 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.270 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.272 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.273 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.275 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.276 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.278 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.279 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.281 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.289 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.292 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.293 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.295 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.296 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.298 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.302 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.304 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.305 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.307 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.308 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.310 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.311 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.313 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.314 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 09:41:39.325 +01:00 [DBG] A data reader was disposed.
+2023-01-09 09:41:39.345 +01:00 [DBG] Closing connection to database 'main' on server 'C:\Users\ADMIN\Desktop\kuca\CountryInfoAPI-try2wtfamnesia\CountryInfoAPI-main\Cityinfo.API\CityInfo.db'.
+2023-01-09 09:41:39.361 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 09:41:39.396 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 09:41:39.402 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/json"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-01-09 09:41:39.405 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-09 09:41:39.408 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 09:41:39.854 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 10086.5664ms
+2023-01-09 09:41:39.864 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 09:41:39.881 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 09:41:39.893 +01:00 [INF] Request finished HTTP/2 GET https://localhost:50148/api/province - - - 200 3694 application/json;+charset=utf-8 10159.4949ms
+2023-01-09 09:41:44.100 +01:00 [DBG] Connection id "0HMNI3KVDKJMG" received FIN.
+2023-01-09 09:41:44.105 +01:00 [DBG] Connection id "0HMNI3KVDKJMG" is closed. The last processed stream ID was 1.
+2023-01-09 09:41:44.106 +01:00 [DBG] Connection id "0HMNI3KVDKJMG" sending FIN because: "The client closed the connection."
+2023-01-09 09:41:44.115 +01:00 [DBG] Connection id "0HMNI3KVDKJMG" stopped.
+2023-01-09 09:56:43.804 +01:00 [INF] Application is shutting down...
+2023-01-09 09:56:43.811 +01:00 [DBG] Hosting stopping
+2023-01-09 09:56:43.854 +01:00 [DBG] Hosting stopped
+2023-01-09 10:23:47.513 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-09 10:23:47.595 +01:00 [DBG] Hosting starting
+2023-01-09 10:23:47.667 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 963A8911917DD36B160DC829312E1A5AA4062E73)
+2023-01-09 10:23:47.697 +01:00 [INF] Now listening on: https://localhost:60994
+2023-01-09 10:23:47.699 +01:00 [INF] Now listening on: http://localhost:60995
+2023-01-09 10:23:47.700 +01:00 [DBG] Loaded hosting startup assembly Cityinfo.API
+2023-01-09 10:23:47.701 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-01-09 10:23:47.702 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-01-09 10:23:47.703 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-09 10:23:47.704 +01:00 [INF] Hosting environment: Development
+2023-01-09 10:23:47.705 +01:00 [INF] Content root path: C:\nikoProjects\cityinfoapi\Cityinfo.API\
+2023-01-09 10:23:47.706 +01:00 [DBG] Hosting started
+2023-01-09 10:23:47.822 +01:00 [DBG] Connection id "0HMNI4CR7NFD1" accepted.
+2023-01-09 10:23:47.822 +01:00 [DBG] Connection id "0HMNI4CR7NFD0" accepted.
+2023-01-09 10:23:47.824 +01:00 [DBG] Connection id "0HMNI4CR7NFD1" started.
+2023-01-09 10:23:47.824 +01:00 [DBG] Connection id "0HMNI4CR7NFD0" started.
+2023-01-09 10:23:47.840 +01:00 [DBG] Connection id "0HMNI4CR7NFD1" received FIN.
+2023-01-09 10:23:47.840 +01:00 [DBG] Connection id "0HMNI4CR7NFD0" received FIN.
+2023-01-09 10:23:47.848 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-09 10:23:47.848 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-09 10:23:47.873 +01:00 [DBG] Connection id "0HMNI4CR7NFD0" stopped.
+2023-01-09 10:23:47.873 +01:00 [DBG] Connection id "0HMNI4CR7NFD1" stopped.
+2023-01-09 10:23:47.877 +01:00 [DBG] Connection id "0HMNI4CR7NFD0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-09 10:23:47.877 +01:00 [DBG] Connection id "0HMNI4CR7NFD1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-09 10:23:48.298 +01:00 [DBG] Connection id "0HMNI4CR7NFD2" accepted.
+2023-01-09 10:23:48.334 +01:00 [DBG] Connection id "0HMNI4CR7NFD2" started.
+2023-01-09 10:23:48.446 +01:00 [DBG] Connection 0HMNI4CR7NFD2 established using the following protocol: "Tls12"
+2023-01-09 10:23:48.528 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/ - -
+2023-01-09 10:23:48.569 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-09 10:23:48.631 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 10:23:48.668 +01:00 [DBG] No candidates found for the request path '/'
+2023-01-09 10:23:48.670 +01:00 [DBG] Request did not match any endpoints
+2023-01-09 10:23:48.682 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/ - - - 404 0 - 162.1691ms
+2023-01-09 10:23:50.382 +01:00 [DBG] Connection id "0HMNI4CR7NFD2" received FIN.
+2023-01-09 10:23:50.390 +01:00 [DBG] Connection id "0HMNI4CR7NFD2" is closed. The last processed stream ID was 1.
+2023-01-09 10:23:50.392 +01:00 [DBG] Connection id "0HMNI4CR7NFD2" sending FIN because: "The client closed the connection."
+2023-01-09 10:23:50.410 +01:00 [DBG] Connection id "0HMNI4CR7NFD2" stopped.
+2023-01-09 10:23:56.668 +01:00 [DBG] Connection id "0HMNI4CR7NFD3" accepted.
+2023-01-09 10:23:56.671 +01:00 [DBG] Connection id "0HMNI4CR7NFD3" started.
+2023-01-09 10:23:56.676 +01:00 [DBG] Connection 0HMNI4CR7NFD3 established using the following protocol: "Tls12"
+2023-01-09 10:23:56.679 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/index.html - -
+2023-01-09 10:23:56.924 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-01-09 10:23:56.930 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-01-09 10:23:56.933 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/index.html - - - 200 - text/html;charset=utf-8 253.8824ms
+2023-01-09 10:23:56.984 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/swagger-ui.css - -
+2023-01-09 10:23:56.995 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/swagger-ui-bundle.js - -
+2023-01-09 10:23:56.996 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/swagger-ui-standalone-preset.js - -
+2023-01-09 10:23:56.996 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 10:23:57.014 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-01-09 10:23:57.014 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 18.2148ms
+2023-01-09 10:23:57.020 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-01-09 10:23:57.025 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/swagger-ui.css - - - 200 143632 text/css 40.4291ms
+2023-01-09 10:23:57.027 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 31.2772ms
+2023-01-09 10:23:57.036 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-01-09 10:23:57.041 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 45.9975ms
+2023-01-09 10:23:57.063 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/_vs/browserLink - -
+2023-01-09 10:23:57.202 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 139.6881ms
+2023-01-09 10:23:57.405 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/v1/swagger.json - -
+2023-01-09 10:23:57.469 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/favicon-32x32.png - -
+2023-01-09 10:23:57.500 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-01-09 10:23:57.511 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/favicon-32x32.png - - - 200 628 image/png 42.2517ms
+2023-01-09 10:23:57.617 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.0563ms
+2023-01-09 10:24:00.411 +01:00 [DBG] Connection id "0HMNI4CR7NFD3" received FIN.
+2023-01-09 10:24:00.414 +01:00 [DBG] Connection id "0HMNI4CR7NFD3" is closed. The last processed stream ID was 15.
+2023-01-09 10:24:00.416 +01:00 [DBG] Connection id "0HMNI4CR7NFD3" sending FIN because: "The client closed the connection."
+2023-01-09 10:24:00.426 +01:00 [DBG] Connection id "0HMNI4CR7NFD3" stopped.
+2023-01-09 10:24:03.377 +01:00 [DBG] Connection id "0HMNI4CR7NFD4" accepted.
+2023-01-09 10:24:03.379 +01:00 [DBG] Connection id "0HMNI4CR7NFD4" started.
+2023-01-09 10:24:03.386 +01:00 [DBG] Connection 0HMNI4CR7NFD4 established using the following protocol: "Tls12"
+2023-01-09 10:24:03.388 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/api/province - -
+2023-01-09 10:24:03.389 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 10:24:03.403 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 10:24:03.413 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 10:24:03.416 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 10:24:03.419 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 10:24:03.442 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 10:24:03.445 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 10:24:03.446 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 10:24:03.448 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 10:24:03.450 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 10:24:03.451 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+2023-01-09 10:24:03.453 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 10:24:03.703 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-01-09 10:24:03.866 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 10:24:04.695 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 10:24:04.750 +01:00 [DBG] Compiling query expression: 
+'DbSet<Province>()
+    .OrderBy(c => c.Name)'
+2023-01-09 10:24:04.978 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Province>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Province.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Province.Description (string) Required MaxLength(2000), 1], [Property: Province.Name (string) Required MaxLength(50), 2] }
+        SELECT p.Id, p.Description, p.Name
+        FROM Provinces AS p
+        ORDER BY p.Name ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Province>, 
+    Cityinfo.API.DbContexts.ProvinceInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2023-01-09 10:24:05.020 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 10:24:05.297 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (277ms).
+2023-01-09 10:24:05.307 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 10:24:05.332 +01:00 [DBG] Opened connection to database 'main' on server 'C:\nikoProjects\cityinfoapi\Cityinfo.API\CityInfo.db'.
+2023-01-09 10:24:05.350 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 10:24:05.402 +01:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 10:24:05.438 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:24:05.472 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:24:05.477 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:24:05.482 +01:00 [DBG] A data reader was disposed.
+2023-01-09 10:24:05.490 +01:00 [DBG] Closing connection to database 'main' on server 'C:\nikoProjects\cityinfoapi\Cityinfo.API\CityInfo.db'.
+2023-01-09 10:24:05.500 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 10:24:05.526 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 10:24:05.530 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/json"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-01-09 10:24:05.533 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-09 10:24:05.534 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 10:24:05.669 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 2211.0682ms
+2023-01-09 10:24:05.672 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 10:24:05.676 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 10:24:05.680 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/api/province - - - 200 321 application/json;+charset=utf-8 2292.5161ms
+2023-01-09 10:24:10.420 +01:00 [DBG] Connection id "0HMNI4CR7NFD4" received FIN.
+2023-01-09 10:24:10.427 +01:00 [DBG] Connection id "0HMNI4CR7NFD4" is closed. The last processed stream ID was 1.
+2023-01-09 10:24:10.438 +01:00 [DBG] Connection id "0HMNI4CR7NFD4" sending FIN because: "The client closed the connection."
+2023-01-09 10:24:10.448 +01:00 [DBG] Connection id "0HMNI4CR7NFD4" stopped.
+2023-01-09 10:26:14.639 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-01-09 10:26:15.977 +01:00 [DBG] Hosting starting
+2023-01-09 10:26:16.698 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 963A8911917DD36B160DC829312E1A5AA4062E73)
+2023-01-09 10:26:17.331 +01:00 [INF] Now listening on: https://localhost:60994
+2023-01-09 10:26:17.469 +01:00 [DBG] Connection id "0HMNI4E7QSJOA" received FIN.
+2023-01-09 10:26:17.843 +01:00 [INF] Now listening on: http://localhost:60995
+2023-01-09 10:26:17.851 +01:00 [DBG] Connection id "0HMNI4E7QSJOA" accepted.
+2023-01-09 10:26:19.374 +01:00 [DBG] Loaded hosting startup assembly Cityinfo.API
+2023-01-09 10:26:19.378 +01:00 [DBG] Connection id "0HMNI4E7QSJOB" accepted.
+2023-01-09 10:26:19.381 +01:00 [DBG] Connection id "0HMNI4E7QSJOA" started.
+2023-01-09 10:26:19.382 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-01-09 10:26:19.389 +01:00 [DBG] Connection id "0HMNI4E7QSJOB" started.
+2023-01-09 10:26:19.433 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-01-09 10:26:19.451 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-01-09 10:26:19.488 +01:00 [DBG] Connection id "0HMNI4E7QSJOA" stopped.
+2023-01-09 10:26:19.491 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-09 10:26:19.494 +01:00 [INF] Hosting environment: Development
+2023-01-09 10:26:19.495 +01:00 [INF] Content root path: C:\nikoProjects\cityinfoapi\Cityinfo.API\
+2023-01-09 10:26:19.499 +01:00 [DBG] Hosting started
+2023-01-09 10:26:19.502 +01:00 [DBG] Connection id "0HMNI4E7QSJOA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-01-09 10:26:19.532 +01:00 [DBG] Connection 0HMNI4E7QSJOB established using the following protocol: "Tls12"
+2023-01-09 10:26:19.615 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/ - -
+2023-01-09 10:26:19.690 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-01-09 10:26:19.765 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 10:26:19.825 +01:00 [DBG] No candidates found for the request path '/'
+2023-01-09 10:26:20.333 +01:00 [DBG] Request did not match any endpoints
+2023-01-09 10:26:21.152 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/ - - - 404 0 - 1541.9729ms
+2023-01-09 10:26:25.428 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/index.html - -
+2023-01-09 10:26:26.493 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-01-09 10:26:26.605 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-01-09 10:26:26.765 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/_framework/aspnetcore-browser-refresh.js - -
+2023-01-09 10:26:26.863 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/_vs/browserLink - -
+2023-01-09 10:26:27.536 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/index.html - - - 200 - text/html;charset=utf-8 2108.0248ms
+2023-01-09 10:26:27.623 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/_framework/aspnetcore-browser-refresh.js - - - 200 11994 application/javascript;+charset=utf-8 858.5205ms
+2023-01-09 10:26:27.895 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1031.8496ms
+2023-01-09 10:26:28.008 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/swagger/v1/swagger.json - -
+2023-01-09 10:26:28.550 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 541.2308ms
+2023-01-09 10:26:31.386 +01:00 [DBG] Connection id "0HMNI4E7QSJOB" received FIN.
+2023-01-09 10:26:31.490 +01:00 [DBG] Connection id "0HMNI4E7QSJOB" is closed. The last processed stream ID was 9.
+2023-01-09 10:26:31.624 +01:00 [DBG] Connection id "0HMNI4E7QSJOB" sending FIN because: "The client closed the connection."
+2023-01-09 10:26:31.781 +01:00 [DBG] Connection id "0HMNI4E7QSJOB" stopped.
+2023-01-09 10:26:33.226 +01:00 [DBG] Connection id "0HMNI4E7QSJOC" accepted.
+2023-01-09 10:26:33.229 +01:00 [DBG] Connection id "0HMNI4E7QSJOC" started.
+2023-01-09 10:26:33.233 +01:00 [DBG] Connection 0HMNI4E7QSJOC established using the following protocol: "Tls12"
+2023-01-09 10:26:33.236 +01:00 [INF] Request starting HTTP/2 GET https://localhost:60994/api/province - -
+2023-01-09 10:26:33.238 +01:00 [DBG] The request path  does not match the path filter
+2023-01-09 10:26:33.249 +01:00 [DBG] 1 candidate(s) found for the request path '/api/province'
+2023-01-09 10:26:33.261 +01:00 [DBG] Endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)' with route pattern 'api/province' is valid for the request path '/api/province'
+2023-01-09 10:26:33.266 +01:00 [DBG] Request matched endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 10:26:33.269 +01:00 [INF] Executing endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 10:26:33.301 +01:00 [INF] Route matched with {action = "GetProvinces", controller = "Provincies"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Cityinfo.API.Models.ProvinceDto]]] GetProvinces() on controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API).
+2023-01-09 10:26:33.307 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-01-09 10:26:33.309 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-01-09 10:26:33.311 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-01-09 10:26:33.316 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-01-09 10:26:33.318 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)","Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+2023-01-09 10:26:33.322 +01:00 [DBG] Executing controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 10:26:33.465 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-01-09 10:26:33.767 +01:00 [DBG] Executed controller factory for controller Cityinfo.API.Controllers.ProvinciesController (Cityinfo.API)
+2023-01-09 10:26:34.944 +01:00 [INF] Entity Framework Core 6.0.0 initialized 'ProvinceInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.0' with options: None
+2023-01-09 10:26:35.022 +01:00 [DBG] Compiling query expression: 
+'DbSet<Province>()
+    .OrderBy(c => c.Name)'
+2023-01-09 10:26:35.316 +01:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Province>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Province.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Province.Description (string) Required MaxLength(2000), 1], [Property: Province.Name (string) Required MaxLength(50), 2] }
+        SELECT p.Id, p.Description, p.Name
+        FROM Provinces AS p
+        ORDER BY p.Name ASC), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Province>, 
+    Cityinfo.API.DbContexts.ProvinceInfoContext, 
+    False, 
+    False, 
+    True
+)'
+2023-01-09 10:26:35.378 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-01-09 10:26:35.431 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (54ms).
+2023-01-09 10:26:35.440 +01:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 10:26:35.465 +01:00 [DBG] Opened connection to database 'main' on server 'C:\nikoProjects\cityinfoapi\Cityinfo.API\CityInfo.db'.
+2023-01-09 10:26:35.482 +01:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 10:26:35.534 +01:00 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "p"."Id", "p"."Description", "p"."Name"
+FROM "Provinces" AS "p"
+ORDER BY "p"."Name"
+2023-01-09 10:26:35.566 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.606 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.608 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.610 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.612 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.614 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.618 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.622 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.624 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.626 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.628 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.630 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.635 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.639 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.640 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.643 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.644 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.646 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.651 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.655 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.657 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.659 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.661 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.666 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.667 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.669 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.673 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.674 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.676 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.681 +01:00 [DBG] Context 'ProvinceInfoContext' started tracking 'Province' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-01-09 10:26:35.689 +01:00 [DBG] A data reader was disposed.
+2023-01-09 10:26:35.695 +01:00 [DBG] Closing connection to database 'main' on server 'C:\nikoProjects\cityinfoapi\Cityinfo.API\CityInfo.db'.
+2023-01-09 10:26:35.702 +01:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db'.
+2023-01-09 10:26:35.731 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2023-01-09 10:26:35.741 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/json"]' and explicitly specified content types '["application/json"]'. The content types in the accept header must be a subset of the explicitly set content types.
+2023-01-09 10:26:35.745 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-01-09 10:26:35.747 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Cityinfo.API.Models.ProvinceDto, Cityinfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-01-09 10:26:35.976 +01:00 [INF] Executed action Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API) in 2637.8547ms
+2023-01-09 10:26:36.043 +01:00 [INF] Executed endpoint 'Cityinfo.API.Controllers.ProvinciesController.GetProvinces (Cityinfo.API)'
+2023-01-09 10:26:36.048 +01:00 [DBG] 'ProvinceInfoContext' disposed.
+2023-01-09 10:26:36.071 +01:00 [INF] Request finished HTTP/2 GET https://localhost:60994/api/province - - - 200 3694 application/json;+charset=utf-8 2835.4742ms
+2023-01-09 10:26:41.407 +01:00 [DBG] Connection id "0HMNI4E7QSJOC" received FIN.
+2023-01-09 10:26:41.411 +01:00 [DBG] Connection id "0HMNI4E7QSJOC" is closed. The last processed stream ID was 1.
+2023-01-09 10:26:41.415 +01:00 [DBG] Connection id "0HMNI4E7QSJOC" sending FIN because: "The client closed the connection."
+2023-01-09 10:26:41.433 +01:00 [DBG] Connection id "0HMNI4E7QSJOC" stopped.

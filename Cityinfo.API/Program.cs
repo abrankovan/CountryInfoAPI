@@ -41,6 +41,10 @@ builder.Services.AddSingleton<ProvinciesDataStore>();
 
 builder.Services.AddDbContext<ProvinceInfoContext>(DbContextOptions => DbContextOptions.UseSqlite("Data Source = CityInfo.db"));
 
+builder.Services.AddScoped<IProvinceInfoRepository, ProvinceInfoRepository>();
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -63,4 +67,3 @@ app.UseEndpoints(endpoints =>
 
 app.Run();
 
- 
