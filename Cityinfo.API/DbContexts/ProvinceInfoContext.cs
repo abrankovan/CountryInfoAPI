@@ -21,7 +21,7 @@ namespace Cityinfo.API.DbContexts
                 new Province("Juznobanatski okrug")
                 {
                     Id = 1,
-                    Description = "...."
+                    Description = "..."
                 },
                 new Province("Severnobanatski okrug")
                 {
