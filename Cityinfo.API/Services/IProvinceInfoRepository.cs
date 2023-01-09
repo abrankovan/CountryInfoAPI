@@ -6,6 +6,6 @@ namespace Cityinfo.API.Services
     {
         Task<IEnumerable<Province>> GetProvincesAsync();
 
-
+        Task<Province?> GetProvinceAsync(int provinceId, bool includeCities);
     }
 }

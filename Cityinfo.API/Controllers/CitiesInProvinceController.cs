@@ -23,17 +23,17 @@ namespace Cityinfo.API.Controllers
         }
     
         [HttpGet]
-        public ActionResult<IEnumerable<CitiesInProvinceDto>> GetCitiesInProvince(int provinceID)
+        public ActionResult<IEnumerable<CitiesInProvinceDto>> GetCitiesInProvince(int provinceId)
         {
             try
             {
                // throw new Exception("Exception sample");
 
-                var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == provinceID);
+                var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.Id == provinceId);
 
                 if (province == null)
                 {
-                    _logger.LogInformation($"Province with id {provinceID} wasn't found");
+                    _logger.LogInformation($"Province with id {provinceId} wasn't found");
                     return NotFound();
                 }
 
@@ -41,7 +41,7 @@ namespace Cityinfo.API.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogCritical($"Exception while getting cities in province for province with id {provinceID}.", ex);
+                _logger.LogCritical($"Exception while getting cities in province for province with id {provinceId}.", ex);
                 return StatusCode(500, "A problem happend while handling your request.");
             }
         }
@@ -50,9 +50,9 @@ namespace Cityinfo.API.Controllers
         [HttpGet("{citiesinprovinciesid}", Name = "GetCitiesInProvince")]
 
         public ActionResult<CitiesInProvinceDto> GetCitiesInProvince(
-            int provinceID, int citiesInProvinciesId)
+            int provinceId, int citiesInProvinciesId)
         {
-            var province =_provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == provinceID);
+            var province =_provinciesDataStore.Provincies.FirstOrDefault(c => c.Id == provinceId);
             if (province == null)
             {
                 return NotFound();
@@ -70,7 +70,7 @@ namespace Cityinfo.API.Controllers
         [HttpPost]
 
         public ActionResult<CitiesInProvinceDto> CreateCitiInProvince(
-            int provinceID,
+            int provinceId,
             CitiesInProvinceForCreatingDto citiesInProvincies)
         {
             if(!ModelState.IsValid) 
@@ -78,7 +78,7 @@ namespace Cityinfo.API.Controllers
                 return BadRequest();
             }
 
-            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == provinceID);
+            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.Id == provinceId);
             if (province == null)
             {
                 return NotFound();
@@ -100,10 +100,10 @@ namespace Cityinfo.API.Controllers
 
         [HttpPut("{citiesinprovinciesId} ")]
 
-        public ActionResult UpdateCitiesInProvince(int provinceID, int citiesInProvinciesId, 
+        public ActionResult UpdateCitiesInProvince(int provinceId, int citiesInProvinciesId, 
             CitiesInProvinceForUpdateDto citiesInProvincies)
         {
-            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == provinceID);
+            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.Id == provinceId);
             if (province == null)
             {
                 return NotFound();
@@ -124,10 +124,10 @@ namespace Cityinfo.API.Controllers
         [HttpPatch("{citiesinprovinceid}")]
 
         public ActionResult PartiallyUpdateCitiesInProvince(
-            int provinceID, int citiesInProvinciesId,
+            int provinceId, int citiesInProvinciesId,
             JsonPatchDocument<CitiesInProvinceForUpdateDto> patchDocument)
         {
-            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == provinceID);
+            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.Id == provinceId);
             if (province == null)
             {
                 return NotFound();
@@ -165,9 +165,9 @@ namespace Cityinfo.API.Controllers
 
         [HttpDelete("{citiesinprovinciesid}")]
 
-        public ActionResult DeleteCitiesInProvince( int provinceID, int citiesInProvinciesId)
+        public ActionResult DeleteCitiesInProvince( int provinceId, int citiesInProvinciesId)
         {
-            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == provinceID);
+            var province = _provinciesDataStore.Provincies.FirstOrDefault(c => c.Id == provinceId);
             if (province == null)
             {
                 return NotFound();

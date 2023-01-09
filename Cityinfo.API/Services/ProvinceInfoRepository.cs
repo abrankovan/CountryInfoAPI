@@ -17,5 +17,17 @@ namespace Cityinfo.API.Services
         {
             return await _context.Provinces.OrderBy(c => c.Name).ToListAsync();
         }
+
+        public async Task<Province?> GetProvinceAsync(int provinceId, bool includeCities)
+        {
+            if (includeCities)
+            {
+                return await _context.Provinces.Include(c => c.CitiesInProvince)
+                    .Where(c => c.Id == provinceId).FirstOrDefaultAsync();
+            }
+
+            return await _context.Provinces
+                  .Where(c => c.Id == provinceId).FirstOrDefaultAsync();
+        }
     }
 }

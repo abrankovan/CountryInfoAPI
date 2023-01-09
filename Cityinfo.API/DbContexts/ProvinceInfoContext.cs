@@ -200,12 +200,24 @@ namespace Cityinfo.API.DbContexts
                      ProvinceId = 3,
                      Description = "....."
                  },
-                  new CitiesInProvince("Donji Milanovac")
-                  {
-                      Id = 6,
-                      ProvinceId = 2,
-                      Description = "....."
-                  }
+                 new CitiesInProvince("Donji Milanovac")
+                 {
+                     Id = 6,
+                     ProvinceId = 2,
+                     Description = "Ovde je Metalac"
+                 },
+                 new CitiesInProvince("Niš")
+                 {
+                     Id = 7,
+                     ProvinceId = 20,
+                     Description = "Niš Je Naš!!!"
+                 },
+                 new CitiesInProvince("Beograd")
+                 {
+                     Id = 8,
+                     ProvinceId = 30,
+                     Description = "Singidunum..."
+                 }
                 );
             base.OnModelCreating(modelBuilder);
         }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Cityinfo.API.Controllers
 {
     [ApiController]
+    [Produces("application/json")]
     [Route("api/mountain")]
     public class MountainController : ControllerBase
     {

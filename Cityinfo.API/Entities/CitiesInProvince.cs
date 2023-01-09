@@ -14,7 +14,7 @@ namespace Cityinfo.API.Entities
 
         public string Name { get; set; }
 
-        [MaxLength(2000)]
+        [MaxLength(500)]
 
         public string Description { get; set; }
 

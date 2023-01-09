@@ -26,28 +26,32 @@ namespace Cityinfo.API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProvinceDto>>> GetProvinces()
+        public async Task<ActionResult<IEnumerable<ProvinceWithoutCitiesDto>>> GetProvinces()
         {
             var provinceEntities = await _provinceInfoRepository.GetProvincesAsync();
             //return Ok(_provinciesDataStore.Provincies);
-            return Ok(_mapper.Map<IEnumerable<ProvinceDto>>(provinceEntities));
+            return Ok(_mapper.Map<IEnumerable<ProvinceWithoutCitiesDto>>(provinceEntities));
 
         }
-        //[HttpGet("{id}")]
+        [HttpGet("{id}")]
 
-        //public ActionResult<ProvinceDto> GetCity(int id) 
-        //{
-        //    // find city
-        //    var cityToReturn = _provinciesDataStore.Provincies.FirstOrDefault(c=> c.ID== id);
+        public async Task<IActionResult> GetProvince(int id, bool includeCities = false)
+        {
+            // find city
+            //var cityToReturn = _provinciesDataStore.Provincies.FirstOrDefault(c => c.ID == id);
+            var province = await _provinceInfoRepository.GetProvinceAsync(id, includeCities);
 
-        //    if (cityToReturn == null)
-        //    {
-        //        return NotFound();
-        //    }
+            if (province == null)
+            {
+                return NotFound();
+            }
 
-        //    return Ok(cityToReturn);
+            if (includeCities)
+            {
+                return Ok(_mapper.Map<ProvinceDto>(province));
+            }
 
-
-        //}
+            return Ok(_mapper.Map<ProvinceDto>(province));
+        }
     }
 }

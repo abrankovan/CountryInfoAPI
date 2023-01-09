@@ -15,7 +15,7 @@ namespace Cityinfo.API
             {
                 new ProvinceDto()
                 {
-                    ID= 1,
+                    Id= 1,
                     Name= "Vojvodina",
                     Description = "Pokrajna na severu Srbije",
                     CitiesInProvince = new List<CitiesInProvinceDto>()
@@ -38,7 +38,7 @@ namespace Cityinfo.API
                 },
                 new ProvinceDto()
             {
-                ID = 2,
+                Id = 2,
                 Name= "Uza Srbija",
                 Description = "Najveci deo Srbije",
                 CitiesInProvince = new List<CitiesInProvinceDto>()
@@ -60,7 +60,7 @@ namespace Cityinfo.API
             },
                 new ProvinceDto()
             {
-                ID = 3,
+                Id = 3,
                 Name= "Kosovo i Metrohija",
                 Description = "Najveci grad u Vojvodini",
                 CitiesInProvince = new List<CitiesInProvinceDto>()
