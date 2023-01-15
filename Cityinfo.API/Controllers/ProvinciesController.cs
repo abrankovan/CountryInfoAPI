@@ -2,6 +2,7 @@
 using Cityinfo.API.Services;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Cityinfo.API.Controllers
 {

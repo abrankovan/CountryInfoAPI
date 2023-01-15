@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Cityinfo.API.Models;
 using Cityinfo.API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -77,9 +78,10 @@ namespace Cityinfo.API.Controllers
                 return Ok(_mapper.Map<CitiesInProvinceDto>(citiesInProvincies));
 
             }
-            [HttpPost]
 
-            public async Task<ActionResult<CitiesInProvinceDto>> CreateCitiInProvince(
+        [HttpPost]
+		[Authorize]
+		public async Task<ActionResult<CitiesInProvinceDto>> CreateCitiInProvince(
                 int provinceID,
                 CitiesInProvinceForCreatingDto citiesInProvincies)
             {

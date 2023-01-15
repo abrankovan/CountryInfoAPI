@@ -1,12 +1,14 @@
 ﻿using Cityinfo.API.Entities;
 using Cityinfo.API.Models;
 using Cityinfo.API.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cityinfo.API.Controllers
 {
     [ApiController]
     [Produces("application/json")]
+    [Authorize]
     [Route("api/river")]
     public class RiverController : ControllerBase
     {
