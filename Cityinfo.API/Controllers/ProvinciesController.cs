@@ -1,39 +1,48 @@
 ﻿using Cityinfo.API.Models;
+using Cityinfo.API.Services;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Cityinfo.API.Controllers
 {
     [ApiController]
     [Route("api/province")]
+    [Produces("application/json")]
     public class ProvinciesController : ControllerBase
     {
-        private readonly ProvinciesDataStore _provinciesDataStore;
+        private readonly IProvinceInfoRepository _provinceInfoRepository;
+        private readonly IMapper _mapper;
 
-        public ProvinciesController(ProvinciesDataStore provinciesDataStore) 
+        public ProvinciesController(IProvinceInfoRepository provinceInfoRepository,
+            IMapper mapper)
         {
-            _provinciesDataStore = provinciesDataStore;
+            _provinceInfoRepository= provinceInfoRepository ?? throw new ArgumentNullException(nameof(provinceInfoRepository));
+            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
         [HttpGet]
-        public ActionResult<IEnumerable<ProvinceDto>> GetCities()
+        public async Task<ActionResult<IEnumerable<ProvinceWithoutCitiesInProvinceDto>>> GetCities()
         {
-           
-            return Ok(_provinciesDataStore.Provincies);
+            var provinceEntities = await _provinceInfoRepository.GetProvinceAsync();
+            return Ok(_mapper.Map<IEnumerable<ProvinceWithoutCitiesInProvinceDto>>(provinceEntities));
+           // return Ok(_provinciesDataStore.Provincies);
              
         }
         [HttpGet("{id}")]
 
-        public ActionResult<ProvinceDto> GetCity(int id) 
+        public async Task<IActionResult> GetCity(
+            int id, bool includeCitiesInProvince = false) 
         {
-            // find city
-            var cityToReturn = _provinciesDataStore.Provincies.FirstOrDefault(c=> c.ID== id);
-
-            if (cityToReturn == null)
+            var province = await _provinceInfoRepository.GetProvinceAsync(id, includeCitiesInProvince);
+            if(province == null)
             {
                 return NotFound();
             }
-
-            return Ok(cityToReturn);
-
+            if (includeCitiesInProvince)
+            {
+                return Ok(_mapper.Map<ProvinceDto>(province));
+            }
+            return Ok(_mapper.Map<ProvinceWithoutCitiesInProvinceDto>(province));
            
         }
     }

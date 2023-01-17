@@ -3,7 +3,9 @@ using Cityinfo.API.DbContexts;
 using Cityinfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Text;
 
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
@@ -39,8 +41,28 @@ builder.Services.AddTransient<IMailService, CloudMailService>();
 
 builder.Services.AddSingleton<ProvinciesDataStore>();
 
-builder.Services.AddDbContext<ProvinceInfoContext>(DbContextOptions => DbContextOptions.UseSqlite("Data Source = CityInfo.db"));
+builder.Services.AddDbContext<ProvinceInfoContext>(
+    dbContextOptions => dbContextOptions.UseSqlite(
+    builder.Configuration["ConnectionStrings:CityInfoDBConnectionString"]));
 
+builder.Services.AddScoped<IProvinceInfoRepository, ProvinceInfoRepository>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer(options =>
+        {
+            options.TokenValidationParameters = new()
+            {
+                ValidateIssuer = true,
+                ValidateAudience = true,
+                ValidateIssuerSigningKey = true,
+                ValidIssuer = builder.Configuration["Authentication:Issuer"],
+                ValidAudience = builder.Configuration["Authentication:Audience"],
+                IssuerSigningKey = new SymmetricSecurityKey(
+                    Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
+            };
+
+        }
+    );
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -53,6 +75,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

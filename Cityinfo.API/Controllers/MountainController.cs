@@ -5,6 +5,7 @@ namespace Cityinfo.API.Controllers
 {
     [ApiController]
     [Route("api/mountain")]
+    [Produces("application/json")]
     public class MountainController : ControllerBase
     {
         [HttpGet]
